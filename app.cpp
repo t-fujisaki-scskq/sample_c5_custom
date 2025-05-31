@@ -7,7 +7,7 @@
 #include "Clock.h"  
 
 Tracer tracer;  // <4> 
-Clock clock;    // <5> 
+Clock mclock;    // <5> 
 
 
 using namespace spikeapi;
@@ -35,9 +35,9 @@ void main_task(intptr_t unused) { // <1>
   sta_cyc(TRACER_CYC); // <4>
   
   while (!forceSensor.isTouched()) { // <1>
-      clock.sleep(duration);   // <2>
+      mclock.sleep(duration);   // <2>
   }
-
+  test();
   stp_cyc(TRACER_CYC); // <3>
   tracer.terminate(); // <4>
   ext_tsk(); // <5>
