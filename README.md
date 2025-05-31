@@ -1,8 +1,8 @@
-# sample_c5_custom.asp
+# sample_c5_custom
 etロボコン2025 2025年度技術教育1資料のsample05を改修したプログラムです。シミュレータでエラーが発生します。
 
-シミュレータ環境 Ubuntuでビルド
-PRETTY_NAME="Ubuntu 24.04.2 LTS"
+### シミュレータ環境 Ubuntuでビルド
+> PRETTY_NAME="Ubuntu 24.04.2 LTS"
 NAME="Ubuntu"
 VERSION_ID="24.04"
 VERSION="24.04.2 LTS (Noble Numbat)"
@@ -160,8 +160,8 @@ make: *** [../common/Makefile.workspace:70: img] Error 2
 fakemake on ASP3: one or more error occured while build for sample_c5_custom
 ```
 
-RaspberryPi OSでビルド
-PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+### RaspberryPi OSでビルド
+> PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
 NAME="Debian GNU/Linux"
 VERSION_ID="12"
 VERSION="12 (bookworm)"
